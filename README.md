@@ -7,7 +7,7 @@
 
 <div align="center">
 
-# nonebot-plugin-nonebot_plugin_buffgo
+# nonebot_plugin_buffgo
 
 _✨ BuffGo! ✨_
 
