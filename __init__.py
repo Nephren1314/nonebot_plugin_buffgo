@@ -46,7 +46,9 @@ async def run():
             pass
         else:
             for i in range(0, len(price)):
-                if price[i] < old_price[i]*0.97 and price[i] > old_price[i]*1.02:
+                if len(price) != len(old_price):
+                    pass
+                elif price[i] < old_price[i]*0.97 and price[i] > old_price[i]*1.02:
                     pattern1 = r'([^|]*{}[^|]*)\|'.format(price[i])
                     pattern2 = r'([^|]*{}[^|]*)\|'.format(old_price[i])
                     result0 = "原价"+str(re.findall(pattern2, out))+'\n'+"现价"+str(re.findall(pattern1, result))
